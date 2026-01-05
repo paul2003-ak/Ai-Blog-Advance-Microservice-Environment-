@@ -12,7 +12,9 @@ const Home = () => {
       toast.error("Plz Login First")
       return redirect("/login")
     }
-    return redirect("/blog/new");
+    else{
+      return redirect("/blog/new");
+    }
   };
 
   return (
