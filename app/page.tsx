@@ -10,6 +10,7 @@ const Home = () => {
   const handleclick = () => {
     if(!isAuth){
       toast.error("Plz Login First")
+      return redirect("/login")
     }
     return redirect("/blog/new");
   };
